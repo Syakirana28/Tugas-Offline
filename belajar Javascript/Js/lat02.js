@@ -86,7 +86,7 @@ let hasil  = "salah";
             }
         }
 
-        if (bulan == 7) {
+        if (bulan == 12) {
             hasil = "Sagitarius";
             if (tanggal > 21 && tanggal < 32) {
                 hasil ="Capricorn";

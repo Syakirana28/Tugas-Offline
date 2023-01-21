@@ -1,44 +1,125 @@
-zodiak(2, 10);
+let tampil = document.querySelector("#belajar");
+// let tanggal = document.getElementById("#tanggal");
+// let bulan = document.getElementById("#bulan");
 
-function zodiak(bulan, tanggal) {
+function coba() {
+    // console.log("eventlistener");
+    alert(a);
+    coba(13);
+}
+
+klik.addEventListener("click", coba);
+
+// klik.onclick = function () {
+//     alert(4);
+// }
+
+//zodiak(2, 10);
+
+function hasil() {
+    let a = document.querySelector("#tgl").value;
+    let b = document.getElementsByName("tanggal")[0].value;
+    tampil.innerHTML = a;
+}
+
+function zodiak() {
+    let bulan = document.getElementById("bulan").value;
+    let tanggal = document.getElementById("tanggal").value;
+
     let hasil = "Tanggal atau bulan yang di input salah";
 
     if (bulan > 0 && bulan < 13 && tanggal > 0 && tanggal < 32) {
-        hasil = "Zodiak tidak tersedia";
         if (bulan == 1) {
-            hasil = "capricorn";
+            hasil = "Capricorn";
             if (tanggal > 19 && tanggal < 32) {
-                hasil = "aquarius";
+                hasil = "Aquarius";
             }
         }
 
         if (bulan == 2) {
             hasil = "Aquarius";
             if (tanggal > 18 && tanggal < 30) {
-                hasil = "Pisces";
+                hasil ="Pisces";
             }
-            hasil = "Tanggal tidak ada";
+            hasil = "tanggal tidak ada";
         }
 
         if (bulan == 3) {
             hasil = "Pisces";
-            if (tanggal > 20) {
-                hasil = "Aries";
+            if (tanggal > 20 && tanggal < 32) {
+                hasil ="Aries";
             }
         }
 
         if (bulan == 4) {
             hasil = "Aries";
-            if (tanggal > 20) {
-                hasil = "Taurus";
+            if (tanggal > 20 && tanggal < 32) {
+                hasil ="Taurus";
+            }
+        }
+
+        if (bulan == 5) {
+            hasil = "Taurus";
+            if (tanggal > 21 && tanggal < 32) {
+                hasil ="Gemini";
+            }
+        }
+
+        if (bulan == 6) {
+            hasil = "Gemini";
+            if (tanggal > 23 && tanggal < 32) {
+                hasil ="Cancer";
+            }
+        }
+
+        if (bulan == 7) {
+            hasil = "Cancer";
+            if (tanggal > 23 && tanggal < 32) {
+                hasil ="Leo";
+            }
+        }
+
+        if (bulan == 8) {
+            hasil = "Leo";
+            if (tanggal > 23 && tanggal < 32) {
+                hasil ="Virgo";
+            }
+        }
+
+        if (bulan == 9) {
+            hasil = "Virgo";
+            if (tanggal > 22 && tanggal < 32) {
+                hasil ="Libra";
+            }
+        }
+
+        if (bulan == 10) {
+            hasil = "Libra";
+            if (tanggal > 22 && tanggal < 32) {
+                hasil ="Scorpio";
+            }
+        }
+
+        if (bulan == 11) {
+            hasil = "Scorpio";
+            if (tanggal > 22 && tanggal < 32) {
+                hasil ="Sagitarius";
+            }
+        }
+
+        if (bulan == 12) {
+            hasil = "Sagitarius";
+            if (tanggal > 21 && tanggal < 32) {
+                hasil ="Capricorn";
             }
         }
     }
 
     console.log(hasil);
+    tampil.innerHTML = hasil;
 }
 
-lulus(75);
+//lulus(75);
 function lulus(nilai) {
 
     let hasil = "Nilai yang di masukkan salah";
